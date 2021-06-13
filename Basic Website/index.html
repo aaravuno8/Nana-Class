@@ -9,6 +9,11 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+        ::selection{
+            background-color: rgba(255, 0, 0, 0.5);
+            color: white;
+        }
+
         button::before {
             content: "View: ";
         }
@@ -52,15 +57,9 @@
     <div id="main-content">
         <h2>Shukla Sir's Zoology World!</h2>
         <h4>Let's see some content!</h4>
-        <button id="images-btn">Images</button>
+        <button onclick="window.location.href=''">Images</button>
         <button id="other-files-btn">Other Files</button>
     </div>
-    <script>
-        const imageBtn = document.querySelector("#images-btn")
-        const otherFilesBtn = document.querySelector("#other-files-btn")
-        console.log(imageBtn)
-        console.log(otherFilesBtn)
-    </script>
 </body>
 
 </html>
